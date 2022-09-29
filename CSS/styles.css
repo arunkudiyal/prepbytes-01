@@ -1,0 +1,51 @@
+/* Styles all the elements of h1 in the doc */
+h1 {
+    color: orange;
+}
+
+a {
+    color: green;
+}
+
+/* Style to be assigned to a particular element (ids are unique) */
+#anchor-one {
+    color: yellow;
+}
+
+#anchor-two {
+    color: green;
+}
+
+/* Styles to be assigned to a group of html elements having common classes */
+.my-styles {
+    color: grey;
+}
+
+/* Attribute Selectors --> [ ] */
+/* ^= --> Starts with */
+/* $= --> Ends with */
+/* *= --> Contains */
+
+/* img[src^="https://"] {
+    border: 10px solid red;
+}
+
+img[src^="../"] {
+    border: 5px solid blue;
+} */
+
+/* img[src$=".jpg"] {
+    border: 10px solid gray
+} */
+
+/* img[src*="sample"] {
+    border: 10px solid violet
+} */
+
+/* img[src^="sample"], img[src$="sample"] {
+
+} */
+
+/* p[id*="my-para"] {
+    color: pink;
+} */

@@ -7,11 +7,13 @@
         <!-- Define Styles in the Head Section - Meta Data to the content -->
         <!-- INTERNAL CSS -->
         <!-- selector { property: value } -->
-        <!-- <style>
+        <!-- <link href="./styles.css" /> -->
+        <link rel="stylesheet" href="./styles.css" >
+        <style>
             h1 {
                 color: purple;
             }
-        </style> -->
+        </style>
     </head>
 
     <!-- Content of the document -->
@@ -20,8 +22,11 @@
 
         <!-- INLINE STYLES -->
         <!-- <h1 style="color: red;">Heading One</h1> -->
-        <h1>Heading One</h1>
-        <h1>Heading Two</h1>
+        <h1 style="color: red;">Heading One</h1>
+        <!-- <h1>Heading Two</h1>
+        <h1>Heading Three</h1>
+        <h1>Heading Four</h1>
+        <h1>Heading Five</h1> -->
 
         <!-- <h2>Heading Two</h2>
         <h3>Heading Three</h3>
@@ -31,33 +36,35 @@
 
         <hr />
 
-        <p>Lorem ipsum dolor sit amet <b>consectetur adipisicing</b> elit. Adipisci itaque repellat rerum vero, ullam incidunt assumenda deserunt accusantium sit provident totam optio nobis. Itaque, et quisquam mollitia non <u>aspernatur voluptas sit nisi</u>, laudantium ipsam quo, recusandae quaerat placeat aut assumenda? <i>Quasi deleniti</i> illum consequuntur at!</p>
+        <p id="my-para" class="my-styles">Lorem ipsum dolor sit amet <b>consectetur adipisicing</b> elit. Adipisci itaque repellat rerum vero, ullam incidunt assumenda deserunt accusantium sit provident totam optio nobis. Itaque, et quisquam mollitia non <u>aspernatur voluptas sit nisi</u>, laudantium ipsam quo, recusandae quaerat placeat aut assumenda? <i>Quasi deleniti</i> illum consequuntur at!</p>
 
         <!-- Inline Elements -->
         <!-- <a href="#"> this is an anchor to Google </a> -->
 
         <!-- Attributes in HTML -->
         <!-- <a attributeName="valueOfTheAttribute"> this is an anchor to Google</a> -->
-        <!-- <a href="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg"> this is an anchor to an Image </a> -->
+        <a href="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg"> this is an anchor to an Image </a>
 
-        <a href="./second.html">click here to go to Second Page</a>
+        <a id="anchor-one" href="./second.html">click here to go to Second Page</a>
         <br />
-        <a href="../HTML - 2/third.html">click here to go to Third Page</a>
+        <a id="anchor-one" href="./second.html">click here to go to Demo Page</a>
+        <br />
+        <a id="anchor-one" class="my-styles" href="../HTML - 2/third.html">click here to go to Third Page</a>
 
         <hr />
 
-        <h3>Images - </h3>
+        <h3 id="anchor-one">Images - </h3>
 
         <img src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg" alt="Image - 1" />
 
-        <img src="./assets/img/my_img.jpg" alt="Image - 2" />
+        <img src="../HTML/assets/img/sample_img.jpg" alt="Image - 2" />
 
         <hr />
 
         <h3>Lists - </h3>
 
         <!-- Ordered List (ol) -->
-        <ol type="1">
+        <ol class="my-styles" type="1">
             <li>Item - 1</li>
             <li>Item - 2</li>
             <li>Item - 3</li>
@@ -163,6 +170,11 @@
                 const details = [name, email, pwd]
                 console.log(details)
             })
+        </script> -->
+
+        <!-- <script>
+            const elementById = document.getElementsByClassName('my-styles')
+            console.log(elementById)
         </script> -->
     </body>
 </html>
