@@ -22,7 +22,7 @@
 
         <!-- INLINE STYLES -->
         <!-- <h1 style="color: red;">Heading One</h1> -->
-        <h1 style="color: red;">Heading One</h1>
+        <h1 id="my-heading">Heading One</h1>
         <!-- <h1>Heading Two</h1>
         <h1>Heading Three</h1>
         <h1>Heading Four</h1>
@@ -43,8 +43,8 @@
 
         <!-- Attributes in HTML -->
         <!-- <a attributeName="valueOfTheAttribute"> this is an anchor to Google</a> -->
-        <a href="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg"> this is an anchor to an Image </a>
-
+        <a href="https://google.com">click her to go to Google</a> <br>
+        <a href="https://facebook.com/">click to Facebook</a> <br>
         <a id="anchor-one" href="./second.html">click here to go to Second Page</a>
         <br />
         <a id="anchor-one" href="./second.html">click here to go to Demo Page</a>
@@ -55,21 +55,24 @@
 
         <h3 id="anchor-one">Images - </h3>
 
-        <img src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg" alt="Image - 1" />
+        <!-- <img src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg" alt="Image - 1" /> -->
 
         <img src="../HTML/assets/img/sample_img.jpg" alt="Image - 2" />
+
+        <div id="my-container"></div>
+        <div id="my-container-two"></div>
 
         <hr />
 
         <h3>Lists - </h3>
 
         <!-- Ordered List (ol) -->
-        <ol class="my-styles" type="1">
-            <li>Item - 1</li>
-            <li>Item - 2</li>
-            <li>Item - 3</li>
-            <li>Item - 4</li>
-            <li>Item - 5</li>
+        <ol type="1">
+            <li class="my-items">Item - 1</li>
+            <li class="my-items">Item - 2</li>
+            <li class="my-items">Item - 3</li>
+            <li class="my-items">Item - 4</li>
+            <li class="my-items">Item - 5</li>
         </ol>
 
         <!-- Unordered List (ul) -->
@@ -158,8 +161,6 @@
         <hr>
         <h3>HTML Entities</h3>
         <p>&copy;, 2022, PreBytes</p>
-
-        <div style="height: 720px;"></div>
 
         <!-- <script>
             document.querySelector('#btn').addEventListener('click', (e) => {

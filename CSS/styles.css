@@ -1,25 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+
 /* Styles all the elements of h1 in the doc */
+body {
+    background: linear-gradient(to bottom, rgba(166, 238, 245, 1), rgba(166, 238, 245, 0));
+
+    font-family: 'Roboto', sans-serif;
+    /* font-weight: ; */
+}
+
 h1 {
     color: orange;
 }
 
-a {
+/* a {
     color: green;
-}
+} */
 
 /* Style to be assigned to a particular element (ids are unique) */
-#anchor-one {
+/* #anchor-one {
     color: yellow;
-}
-
+} */
+/* 
 #anchor-two {
     color: green;
-}
+} */
 
 /* Styles to be assigned to a group of html elements having common classes */
-.my-styles {
+/* .my-styles {
     color: grey;
-}
+} */
 
 /* Attribute Selectors --> [ ] */
 /* ^= --> Starts with */
@@ -49,3 +58,72 @@ img[src^="../"] {
 /* p[id*="my-para"] {
     color: pink;
 } */
+
+
+/* #my-heading {
+    color: green;
+} */
+
+/* PSEUDO SELECTORS - ( : ) */
+
+/* #my-heading:hover {
+    color: purple;
+}
+
+a:visited {
+    color: yellow;
+} */
+
+/* Selecting elts based on relationships */
+/* .my-items:first-child {
+    color: brown;
+}
+
+.my-items:last-child {
+    color: pink;
+}
+
+.my-items:nth-child(3) {
+    color: yellow;
+}
+
+li:last-child {
+    color: navy;
+} */
+
+
+/* CSS PROPERTIES */
+
+/* 1. Colors --> i.) named-color  ii.) HEX code  iii.) rgb()  iv.) rgba() */
+
+/* h1 {
+    color: #e60be6;
+    color: rgb(34, 245, 133)
+} */
+
+
+/* 2. Gradients --> i.) Linear   ii.) Radial  */
+
+/* #my-container { */
+    /* width: 85%;
+    height: 450px; */
+
+    /* background: url('https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg'); */
+    /* background: linear-gradient(direction, firstColor, secondColor); */
+    /* background: linear-gradient(45deg, black, red, yellow, green, purple, white); */
+/* } */
+
+/* #my-container-two {
+    width: 85%;
+    height: 450px;
+
+    background: radial-gradient(circle, black 20%, red 40%, yellow 60%, green 80%, purple 100%);
+} */
+
+
+/* 3. Texts & Fonts */
+
+h1 {
+    font-size: 28px;
+    text-align: center;
+}
