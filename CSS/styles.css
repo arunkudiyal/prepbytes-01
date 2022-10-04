@@ -172,5 +172,54 @@ li:last-child {
     margin-left: 5px;
 }
 
+#my-para {
+    border: 10px solid purple;
+    border-radius: 5px;
+    padding: 10px;
+}
 
-/* LAYOUTS --> Project Work - ( display ) */
+/* Anchors */
+#anchor-container a {
+    text-decoration: none;
+    color: maroon;
+    text-align: center;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+/* LAYOUTS --> Project Work - ( display --> parent --> used at multiple places with multiple ) */
+
+.inline-para {
+    display: inline;
+}
+
+a {
+    display: block;
+}
+
+/* inline-block */
+
+#flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row, column, row-reverse, colomn-reverse; */
+
+    /* float: right; */
+    /* justify-content: space-evenly; */
+    /* justify-content: flex-stat, flex-end, center; */
+    /* justify-content: space-between, space-around, space-evenly; */
+}
+
+.items {
+    border: 2px solid blue;
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 30%;
+    text-align: center;
+
+    /* align-items: flex-end; */
+}
