@@ -6,6 +6,7 @@ body {
 
     font-family: 'Roboto', sans-serif;
     /* font-weight: ; */
+    /* width: 1024px; */
 }
 
 h1 {
@@ -94,7 +95,7 @@ li:last-child {
 
 /* CSS PROPERTIES */
 
-/* 1. Colors --> i.) named-color  ii.) HEX code  iii.) rgb()  iv.) rgba() */
+/* 1. Colors --> i.) named-color  ii.) HEX code (#000000 - black, #ffffff - white)  iii.) rgb()  iv.) rgba() */
 
 /* h1 {
     color: #e60be6;
@@ -123,7 +124,53 @@ li:last-child {
 
 /* 3. Texts & Fonts */
 
-h1 {
+/* h1 {
     font-size: 28px;
     text-align: center;
+} */
+
+
+/* Units of Measuremnets */
+
+/* #container {
+    height: 350px;
+    width: 75vw;
 }
+
+#new-container {
+    height: 350px;
+    width: 50vw
+} */
+
+
+/* BOX MODEL */
+#my-para {
+    /* 1.2em = 1.2em * 16px = 19.2px */
+    font-size: 1.2em;
+}
+
+#my-img {
+    width: 85%;
+    height: 400px;
+
+    /* NOTE --> border, margin and padding are CSS parent properties (they also have sub-properties)  */
+
+    /* 1. Border - border: widthOfBorder styleOfBorder colorOfBorder */
+    /* border: 5px solid orange; */
+    border-left: 5px solid maroon;
+
+    /* 2. padding: size; padding: top-bottom px left-right px; padding: top px right px bottom px left px; */
+    /* padding: 10px; */
+    /* padding: 5px 10px; */
+    /* padding: 5px 10px 15px 20px; */
+    padding-left: 10px;
+
+    /* 3. margin */
+    /* margin: 10px; */
+    /* margin: 10px 15px; */
+
+    margin-left: 5px;
+}
+
+
+/* LAYOUTS --> Project Work - ( display ) */
