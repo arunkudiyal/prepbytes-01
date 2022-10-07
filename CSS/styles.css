@@ -277,3 +277,69 @@ a {
     position: sticky;
     top: 0;
 }
+
+/* Float & Clear */
+
+#float-img {
+    width: 500px;
+    height: 250px;
+
+    float: right;
+}
+
+.float-box-class {
+    width: 30%;
+    height: 150px;
+}
+
+#float-one {
+    width: 20%;
+    height: 150px;
+    background-color: blue;
+    float: left;
+    margin: 15px;
+}
+
+#float-two {
+    width: 30%;
+    height: 150px;
+    background-color: red;
+    float: left;
+    margin: 15px;
+}
+
+#float-three {
+    width: 40%;
+    height: 150px;
+    background-color: green;
+    float: left;
+    margin: 15px;
+}
+
+#float-four {
+    width: 30%;
+    height: 150px;
+    background-color: yellow;
+    float: left;
+    margin: 15px;
+}
+
+#float-five {
+    width: 45%;
+    height: 150px;
+    background-color: teal;
+    float: left;
+    margin: 15px;
+}
+
+#float-six {
+    width: 50%;
+    height: 150px;
+    background-color: pink;
+    float: left;
+    margin: 15px;
+}
+
+
+/* BOX SHADOWS */
+
