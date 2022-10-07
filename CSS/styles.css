@@ -223,3 +223,57 @@ a {
 
     /* align-items: flex-end; */
 }
+
+
+/* Positioning */
+
+#box {
+    width: 500px;
+    background-color: red;
+    margin: 10px;
+    padding: 10px;
+
+    position: relative;
+    /* position: static;
+    position: absolute;
+    position: relative;
+    position: fixed 
+    position: sticky */
+
+    /* position: relative; */
+    /* top: 100px; */
+}
+
+.box-items {
+    color: white;
+    background-color: green;
+    margin: 10px;
+    padding: 10px;
+}
+
+#box-one {
+    position: relative;
+    /* top: 200px; */
+    /* top: 0px;
+    left: 20px; */
+    /* bottom:;
+    right:;
+    left:; */
+}
+
+#box-two {
+    position: relative;
+    top: 10;
+    left: 0;
+}
+
+#box-three {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#nav {
+    position: sticky;
+    top: 0;
+}
