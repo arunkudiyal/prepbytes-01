@@ -343,3 +343,17 @@ a {
 
 /* BOX SHADOWS */
 
+#box-shadow-div {
+    color: purple;
+    background-color: yellow;
+    border: 2px solid purple;
+    /* box-shadow: h-axis v-axis; color */
+    /* box-shadow: inset 10px 10px 20px green; */
+    box-shadow: inset -10px -10px 5px green;
+    box-shadow: -10px -10px 5px red, 10px -10px 5px blue, 10px 10px 1px green, -10px 10px 5px yellow;
+    margin: 50px;
+}
+
+#box-shadow-heading {
+    text-align: center;
+}
