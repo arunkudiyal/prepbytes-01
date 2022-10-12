@@ -359,6 +359,7 @@ a {
 }
 
 
+<<<<<<< HEAD
 /* CSS GRIDS */
 
 .grid-container {
@@ -425,3 +426,6 @@ a {
 .grid-item-8 {
     grid-column: 3 / 5;
 }
+=======
+/*MAKING A CHANGE, TO MAKE A POINT*/
+>>>>>>> ad685a2816f16ba5a7e78997dd7f82754c555601
