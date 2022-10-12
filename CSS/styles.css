@@ -293,7 +293,7 @@ a {
 }
 
 #float-one {
-    width: 20%;
+    width: 60%;
     height: 150px;
     background-color: blue;
     float: left;
@@ -301,7 +301,7 @@ a {
 }
 
 #float-two {
-    width: 30%;
+    width: 40%;
     height: 150px;
     background-color: red;
     float: left;
@@ -356,4 +356,72 @@ a {
 
 #box-shadow-heading {
     text-align: center;
+}
+
+
+/* CSS GRIDS */
+
+.grid-container {
+    background-color: white;
+    height: auto;
+    padding: 25px;
+    /* display: flex; */
+    display: grid;
+    /* grid-template-columns: 1fr 2fr 1fr; */
+    /* grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px; */
+    /* grid-template-columns: repeat(3, 150px); */
+
+    grid-template-columns: 1fr 2fr 1fr 2fr;
+    grid-template-rows: 150px 150px 150px 150px 150px;
+
+    /* grid-row-gap: 20px;
+    grid-column-gap: 20px; */
+    /* grid-gap: h-width v-width; */
+    grid-gap: 25px 25px;
+}
+
+.grid-item {
+    width: 100%;
+    padding: 10px;
+}
+
+.grid-item:nth-child(odd) {
+    background-color: skyblue;
+}
+
+.grid-item:nth-child(even) {
+    background-color: navy;
+    color: white
+}
+
+.grid-item-1 {
+    /* grid-column-start: 1;
+    grid-column-end: 5; */
+
+    grid-column: 1 / -1;
+}
+
+.grid-item-2 {
+    /* height: 300px; */
+    grid-column: 1 / 4;
+}
+
+.grid-item-4 {
+    grid-column: 1 / 2;
+}
+
+.grid-item-5 {
+    grid-column: 2 / 5;
+}
+
+.grid-item-6 {
+    grid-column: 1 / 5;
+}
+
+.grid-item-7 {
+    grid-column: 1 / 3;
+}
+
+.grid-item-8 {
+    grid-column: 3 / 5;
 }
