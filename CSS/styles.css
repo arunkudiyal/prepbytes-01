@@ -4,7 +4,7 @@
 body {
     background: linear-gradient(to bottom, rgba(166, 238, 245, 1), rgba(166, 238, 245, 0));
 
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     /* font-weight: ; */
     /* width: 1024px; */
 }
@@ -340,6 +340,25 @@ a {
     margin: 15px;
 }
 
+#float-box div {
+    border: 2px dotted blue;
+}
+
+
+#float-box div p {
+    color: white;
+    text-align: center;
+}
+
+/* #submit-btn {
+    padding: 5px;
+    background-color: green;
+    color: white;
+} */
+
+/* #my-img {
+    filter: grayscale(50%);
+} */
 
 /* BOX SHADOWS */
 
@@ -359,7 +378,6 @@ a {
 }
 
 
-<<<<<<< HEAD
 /* CSS GRIDS */
 
 .grid-container {
@@ -373,7 +391,8 @@ a {
     /* grid-template-columns: repeat(3, 150px); */
 
     grid-template-columns: 1fr 2fr 1fr 2fr;
-    grid-template-rows: 150px 150px 150px 150px 150px;
+    /* grid-template-rows: 150px 150px 150px 150px 150px; */
+    grid-template-rows: minmax(150px);
 
     /* grid-row-gap: 20px;
     grid-column-gap: 20px; */
@@ -383,6 +402,7 @@ a {
 
 .grid-item {
     width: 100%;
+    height: 150x;
     padding: 10px;
 }
 
@@ -426,6 +446,54 @@ a {
 .grid-item-8 {
     grid-column: 3 / 5;
 }
-=======
-/*MAKING A CHANGE, TO MAKE A POINT*/
->>>>>>> ad685a2816f16ba5a7e78997dd7f82754c555601
+
+
+/* z-index */
+#container-item-1, #container-item-2 {
+    height: 350px;
+}
+
+#container-item-1 {
+    position: relative;
+    z-index: 5;
+    background-color: green;
+}
+
+#container-item-2 {
+    position: relative;
+    bottom: 75px;
+    z-index: 10;
+    background-color: yellow;
+}
+
+/* align-items & align-slef */
+
+/* Media-Queries */
+
+#screen-box-1, #screen-box-2, #screen-box-3, #screen-box-4 {
+    display: none;
+}
+
+@media all and (max-width: 768px) {
+    #screen-box-1 {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #screen-box-2 {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+    #screen-box-3 {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 1201px) {
+    #screen-box-4 {
+        display: block;
+    }
+}
