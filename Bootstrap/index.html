@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Content Delivery N/W (CDN) for Bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <title>Bootstrap Document</title>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <h1 class="page-header" style="text-align: center">Welcome to Bootstrap!</h1>
+        </div>
+        <div class="container">
+            <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur illum natus officiis quas veniam aliquam delectus, vitae minima! Vel explicabo nulla fuga eligendi nesciunt dolore.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <mark>Repellendus dolorum perferendis beatae</mark> consequatur eligendi aut sint facere autem ullam, soluta consectetur velit, quo itaque officia aliquid id et dolor. Magni quam ratione possimus corrupti consectetur laborum eum fugit blanditiis non, esse repudiandae dolor? Perferendis, eaque?</p>
+        </div>
+
+        <hr />
+
+        <div class="container">
+            <h3>Texts and alignments - </h3>
+            <p class="text-left">1. Left Text</p>
+            <p class="text-center">2. Center Text</p>
+            <p class="text-right">3. Right Text</p>
+
+            <hr />
+
+            <h3>Contextual Classes - </h3>
+            <p class="text-primary text-center">CONTEXTUAL CLASS - Primary</p>
+            <p class="text-danger text-center">CONTEXTUAL CLASS - Danger</p>
+            <p class="text-success text-center">CONTEXTUAL CLASS - Success</p>
+            <p class="text-warning text-center">CONTEXTUAL CLASS - Warning</p>
+            <p class="text-info text-center">CONTEXTUAL CLASS - Info</p>
+            <p class="text-muted text-center">CONTEXTUAL CLASS - Muted</p>
+
+            <br />
+
+            <p class="bg-primary text-center"> <b>CONTEXTUAL CLASS - Primary</b> </p>
+            <p class="bg-danger text-center">CONTEXTUAL CLASS - Danger</p>
+            <p class="bg-success text-center">CONTEXTUAL CLASS - Success</p>
+            <p class="bg-warning text-center">CONTEXTUAL CLASS - Warning</p>
+            <p class="bg-info text-center">CONTEXTUAL CLASS - Info</p>
+            <!-- NOT POSSIBLE -> <p class="bg-muted text-center">CONTEXTUAL CLASS - Muted</p> -->
+
+            <hr />
+
+            <h3>Buttons, Link & Submit - </h3>
+            <button class="btn btn-primary">BUTTON</button>
+            <a class="btn btn-success" href="https://www.google.com">ANCHOR</a>
+            <input class="btn btn-danger" type="submit" value="SUBMIT">
+
+            <h5>Button Sizes - </h5>
+            <button class="btn btn-primary btn-lg">BUTTON</button>
+            <button class="btn btn-primary btn-sm">BUTTON</button>
+            <button class="btn btn-primary btn-xs">BUTTON</button>
+
+            <br />
+            <br />
+            <br />
+            <button class="btn btn-block btn btn-warning">BLOCK BUTTON</button>
+
+            <hr />
+
+            <h3>Lists - </h3>
+
+            <ol class="list-unstyled">
+                <li>List Item - 1</li>
+                <li>List Item - 2</li>
+                <li>List Item - 3</li>
+                <li>List Item - 4</li>
+                <li>List Item - 5</li>
+            </ol>
+
+            <ul class="nav nav-tabs nav-justified">
+                <li> <a href="#">Link - 1</a> </li>
+                <li> <a href="#">Link - 2</a> </li>
+                <li> <a href="#">Link - 3</a> </li>
+                <li> <a href="#">Link - 4</a> </li>
+                <li> <a href="#">Link - 5</a> </li>
+            </ul>
+        </div>
+
+        <hr />
+
+        <div class="container">
+            <h3>Tables - </h3>
+            <table class="table table-bordered table-hover table-condensed">
+                <!-- Table Haed (thead) -->
+                <thead>
+                    <th style="text-align: center;">Emp_ID</th>
+                    <th style="text-align: center;">Emp_Name</th>
+                    <th style="text-align: center;">Emp_Designation</th>
+                </thead>
+
+                <!-- Table Body -->
+                <tbody>
+                    <tr>
+                        <td>1001</td>
+                        <td>user_one@company.com</td>
+                        <td>SDE - I</td>
+                    </tr>
+
+                    <tr>
+                        <td>1002</td>
+                        <td>user_two@company.com</td>
+                        <td>SDE - II</td>
+                    </tr>
+
+                    <tr>
+                        <td>1003</td>
+                        <td>user_three@company.com</td>
+                        <td>SDE - Intern</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr />
+            <form style="    border: 3px solid navy; padding: 20px;">
+                <h3>Sign Up Form</h3>
+                <!-- Name -->
+                <!-- <label> <b>Name :</b> </label> <br> <br> -->
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="enter your name..." />
+                </div>
+                <!-- Email - username@hostmname.com -->
+                <div class="form-group">
+                    <input class="form-control" type="email" placeholder="enter your email..." />
+                </div>
+                <!-- Password -->
+                <div class="form-group">
+                    <input class="form-control" type="password" placeholder="enter your password..." />
+                </div>
+                <!-- Date of Birth -->
+                <div class="form-group">
+                    <input class="form-control" type="date" />
+                </div>
+    
+                <div class="form-group">
+                    <input class="form-control" type="file" accept=".docx, .pdf" >
+                </div>
+    
+                <!-- <button id="btn">CLICK ME</button> -->
+                <input class="btn btn-success" type="submit" value="CLICK ME!!">
+            </form>
+        </div>
+
+        <hr />
+
+        <div class="container">
+            <h3>BS Panels - </h3>
+            <div style="display: flex; justify-content: space-around;">
+                <div style="margin: 10px;" class="panel panel-success">
+                    <div class="panel-heading">Panel - 1</div>
+                    <div class="panel-body">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aliquam iure ex temporibus dolorem saepe est delectus velit itaque voluptatum sapiente quaerat ad perferendis animi alias ipsam obcaecati officiis vero, natus distinctio blanditiis nesciunt eos? Fuga officiis consectetur, minima praesentium dolorum eius autem porro enim aspernatur quam quod provident, molestias modi. Error incidunt sequi mollitia quaerat itaque accusantium molestiae amet adipisci molestias distinctio obcaecati suscipit, esse similique, veniam, architecto ut. Natus, earum tenetur libero consequuntur fuga unde porro vel alias id ea quisquam quibusdam laborum debitis obcaecati provident praesentium perferendis blanditiis incidunt quasi facilis explicabo neque! Ab nobis consequuntur tempora!</p>
+                    </div>
+                    <div class="panel-footer">&copy; 2021, PrepBytes</div>
+                </div>
+
+                <div style="margin: 10px;" class="panel panel-danger">
+                    <div class="panel-heading">Panel - 2</div>
+                    <div class="panel-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aliquam iure ex temporibus dolorem saepe est delectus velit itaque voluptatum sapiente quaerat ad perferendis animi alias ipsam obcaecati officiis vero, natus distinctio blanditiis nesciunt eos? Fuga officiis consectetur, minima praesentium dolorum eius autem porro enim aspernatur quam quod provident, molestias modi. Error incidunt sequi mollitia quaerat itaque accusantium molestiae amet adipisci molestias distinctio obcaecati suscipit, esse similique, veniam, architecto ut. Natus, earum tenetur libero consequuntur fuga unde porro vel alias id ea quisquam quibusdam laborum debitis obcaecati provident praesentium perferendis blanditiis incidunt quasi facilis explicabo neque! Ab nobis consequuntur tempora!</div>
+                    <div class="panel-footer">&copy; 2021, PrepBytes</div>
+                </div>
+
+                <div style="margin: 10px;" class="panel panel-info">
+                    <div class="panel-heading">Panel - 3</div>
+                    <div class="panel-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid aliquam iure ex temporibus dolorem saepe est delectus velit itaque voluptatum sapiente quaerat ad perferendis animi alias ipsam obcaecati officiis vero, natus distinctio blanditiis nesciunt eos? Fuga officiis consectetur, minima praesentium dolorum eius autem porro enim aspernatur quam quod provident, molestias modi. Error incidunt sequi mollitia quaerat itaque accusantium molestiae amet adipisci molestias distinctio obcaecati suscipit, esse similique, veniam, architecto ut. Natus, earum tenetur libero consequuntur fuga unde porro vel alias id ea quisquam quibusdam laborum debitis obcaecati provident praesentium perferendis blanditiis incidunt quasi facilis explicabo neque! Ab nobis consequuntur tempora!</div>
+                    <div class="panel-footer">&copy; 2021, PrepBytes</div>
+                </div>
+            </div>
+        </div>
+
+        <hr />
+
+        <div class="container">
+            <h3>Progress Bar - </h3>
+            <div style="border: 1px solid black;" class="progress">
+                <div class="progress-bar progress-bar-danger progress-bar-striped active" style="width: 65%;" >65%</div>
+            </div>
+
+            <h3>Badges - </h3>
+
+            <button class="btn btn-info">Messages <span class="badge">10+</span> </button>
+            <button class="btn btn-success">Inbox <span class="badge">7</span> </button>
+        </div>
+
+        <hr />
+
+        <div class="container">
+            <h3>Bootstrap Grids - </h3>
+
+            <h5>6 x 6 Grid :</h5>
+            <div class="row">
+                <div class="col-xs-6">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde ex asperiores repellendus amet voluptates, harum aspernatur veritatis inventore consequuntur quas ea possimus at quos natus. Illo, ullam eum asperiores ratione amet incidunt repellat tempore error quod odio excepturi ad? Accusamus laboriosam molestias totam deserunt repudiandae saepe beatae vel quam dolores nemo placeat reprehenderit, blanditiis doloribus, sint harum quod sed aperiam culpa corrupti, ex perferendis asperiores! Repudiandae debitis hic excepturi voluptatibus consequuntur harum non fuga unde neque, maiores, quod eaque, perferendis earum veritatis? Deleniti porro nisi odio nam facere. Voluptatum error nostrum cumque quisquam molestias quae expedita provident, fuga repudiandae perferendis?</p>
+                </div>
+                <div class="col-xs-6">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut at quibusdam et totam, error cupiditate natus eligendi inventore beatae dolorum amet libero veniam. Vel atque excepturi molestias quam, tempora laborum id illo ab odit sequi facere fuga soluta animi laboriosam dolore necessitatibus ad nesciunt nemo quidem culpa deleniti! Aperiam perferendis error nulla accusamus soluta. Dolores quod sit ipsam vitae dolor sint. Laboriosam facere nemo iure repellat repellendus consequatur itaque officiis fugit, rerum vero ipsam minus laborum quo harum esse reprehenderit consequuntur? Non itaque qui, consequatur ipsam ipsa provident voluptates, consectetur fugit neque molestiae corrupti labore aliquam ducimus distinctio aut officiis.</p>
+                </div>
+            </div>
+
+            <h5>3 x 6 x 3 Grid :</h5>
+            <div class="row">
+                <div class="col-xs-3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ullam voluptate odit tenetur. Dolorem ipsum sint modi earum, incidunt excepturi sed nesciunt maxime omnis, magnam voluptates tempora commodi voluptatem. Aliquid quod saepe cum. Dolores consectetur voluptatem animi voluptatum obcaecati, autem vel. Magnam beatae alias ab? </p>
+                </div>
+                <div class="col-xs-6">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, omnis dolor magni fugit eaque similique facilis aperiam officiis modi praesentium cumque quae obcaecati doloribus maxime voluptates sequi temporibus debitis ratione fugiat! Accusamus autem quaerat neque, aut nisi culpa ipsum officia impedit veritatis voluptate cupiditate amet quis tempore! Quam quod facilis fuga incidunt ullam exercitationem possimus totam odit ex praesentium minus porro dolorum nostrum quisquam odio commodi sit, repudiandae eum, nobis beatae culpa dolores optio! Praesentium. </p>
+                </div>
+                <div class="col-xs-3">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ullam voluptate odit tenetur. Dolorem ipsum sint modi earum, incidunt excepturi sed nesciunt maxime omnis, magnam voluptates tempora commodi voluptatem. Aliquid quod saepe cum. Dolores consectetur voluptatem animi voluptatum obcaecati, autem vel. Magnam beatae alias ab? </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="height: 350px;"></div>
+    </body>
+</html>
