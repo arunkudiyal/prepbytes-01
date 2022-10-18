@@ -4,7 +4,7 @@
 body {
     background: linear-gradient(to bottom, rgba(166, 238, 245, 1), rgba(166, 238, 245, 0));
 
-    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Roboto', sans-serif;
     /* font-weight: ; */
     /* width: 1024px; */
 }
@@ -469,31 +469,124 @@ a {
 /* align-items & align-slef */
 
 /* Media-Queries */
+/* Q - If you want to style document when printed --> @media print */
 
 #screen-box-1, #screen-box-2, #screen-box-3, #screen-box-4 {
     display: none;
 }
 
+/* Mobile Phones */
 @media all and (max-width: 768px) {
     #screen-box-1 {
         display: block;
     }
 }
 
+/* Tablet Devices */
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     #screen-box-2 {
         display: block;
     }
 }
 
+/* Dekstop System */
 @media only screen and (min-width: 1025px) and (max-width: 1200px) {
     #screen-box-3 {
         display: block;
     }
 }
 
+/* 4K Displays */
 @media only screen and (min-width: 1201px) {
     #screen-box-4 {
         display: block;
+    }
+}
+
+
+/* Transformations in CSS */
+#animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-color: orange;
+    width: 100%;
+    height: 400px;
+}
+
+#animation-box {
+    width: 400px;
+    height: 400px;
+
+    background-color: red;
+    color: white;
+
+    line-height: 25em;
+    position: relative;
+
+    /* transform: rotate(120deg) */
+
+    /* transform: rotate(360deg); */
+    /* transform: skewX(10deg); */
+    /* transform: skewY(10deg); */
+    /* transform: skew(50deg, 50deg); */
+}
+
+#animation-box:hover {
+    /* transform: scale(1.1); */
+    /* transform: matrix(1, 2, 3, 4, 5, 6); */
+    /* transform: translate(120px, 50%); */
+    /* transform: translate(120px); */
+    /* transform: translate(0, 120px); */
+
+    /* transform-origin: 20% left; */
+    /* transform: scale(1.2) ; */
+
+    /* TRANSITION */
+
+    /* Duration -> from the time you hovered, how much time will it take to complete the transformation */
+    /* transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55); */
+    /* Delay -> from the time you hovered, how much time will it take to start the transition */
+    /* transition-delay: 2s; */
+
+    /* transition: duration function delay; */
+    /* transition: 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) 0.5s; */
+
+    /* animation-name: my-animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite; */
+    /* animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55); */
+    /* animation-timing-function: ease;
+    animation-direction: reverse; */
+    /* animation-delay: ; */
+    /* animation-name: my-animation; */
+
+    animation: my-animation 5s infinite ease .5s;
+}
+
+@keyframes my-animation {
+    0% {
+        /* transform: rotate(0); */
+        /* transform: translate(0); */
+        background-color: red;
+        left: 100px;
+    }
+    50% {
+        /* transform: translate(120px); */
+        background-color: blue;
+        top: 100px;
+    }
+    75% {
+        background-color: black;
+        /* transform: skew(20px, 20px); */
+        right: 100px
+    }
+    100% {
+        transform: translate(0);
+        /* background-color: pink; */
+        bottom: 100px;
     }
 }
