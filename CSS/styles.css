@@ -640,3 +640,26 @@ a {
 #my-sec-p {
     text-align: center;
 }
+
+/* CSS Combinators -> Advanced CSS Selectors -> 3 Combinarors */
+
+/* 1. All the specified element children */
+/* #my-div-2 p {
+    background-color: green;
+    color: yellow;
+    text-align: center;
+} */
+
+/* 2. All the immideate specified element children */
+#my-div-2 > p {
+    background-color: green;
+    color: yellow;
+    text-align: center;
+}
+
+/* 3. All the immideate specified SIBLING */
+/* #my-div-2 + p {
+    background-color: green;
+    color: yellow;
+    text-align: center;
+} */
