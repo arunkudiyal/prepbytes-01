@@ -663,3 +663,18 @@ a {
     color: yellow;
     text-align: center;
 } */
+
+/* INTERVIEW QUESTIONS
+
+    1. CSS Selectors -> Attribute Selectors ($, ^, *), pseudo selectors (:)
+    2. Box Model -> padding, margin, border
+    Q - If I want multiple box-shadows, can we do that?
+
+    3. Layouts -> Flex-Boxes (1D), Grids (2D)
+    4. Positioning -> static, absolute, relative, fixed, sticky
+
+    5. Trnaformation -> Convert a square into a rhomus -> Convert a square in a ||gm
+    6. transitions -> 2 speeds -> 2s ease-in-out .2s
+    7. @keyframes -> Using transformation, how to create animations
+
+*/
