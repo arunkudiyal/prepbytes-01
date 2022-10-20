@@ -590,3 +590,53 @@ a {
         bottom: 100px;
     }
 }
+
+#my-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 400px;
+
+    /* background-color: black; */
+    color: white;
+}
+
+#my-sec-div {
+    border: 5px solid red;
+    padding: 20px;
+    margin: 20px;
+}
+
+#my-sec::before {
+    content: "This is a BEFORE Content of the Section";
+}
+
+/* Content written in before pseudo class will be rendered when the div starts to render for the first time */
+#my-sec-div::before {
+    /* content: "This is a BEFORE Content!"; */
+    content: "";
+    position: absolute;
+    padding: 5px;
+
+    width: 93%;
+    height: 157px;
+
+    background: url('https://wallpaperaccess.com/full/170249.jpg');
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#my-sec-div::after {
+    content: "This is a AFTER Content!";
+}
+
+/* #my-sec::after {
+    content: "This is a AFTER Content!";
+} */
+
+#my-sec-p {
+    text-align: center;
+}
