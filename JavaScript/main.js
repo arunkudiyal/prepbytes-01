@@ -73,8 +73,8 @@
 // console.log(typeof(true))
 
 // INTERNAL_TYPECASTING
-value1 = 1
-value2 = true
+// value1 = 1
+// value2 = true
 
 // console.log(value1 - value2)
 // console.log( value1 > value2 )
@@ -82,7 +82,102 @@ value2 = true
 // console.log( value1 >= value2 )
 // console.log( value1 <= value2 )
 
-console.log(value1 == value2)   // This checks only the value of the 2 variable
-console.log(value1 === value2)  // This checks not the value BUT ALSO the type
+// console.log(value1 == value2)   // This checks only the value of the 2 variable
+// console.log(value1 === value2)  // This checks not the value BUT ALSO the type
 
 // 2. Non-Primitive Data Types (Non-PDTs)
+
+// Conditional Statements -> if, else if, and else
+// Q -> you are given with 2 numbers, add them and print them
+// num1 = 100
+// num2 = 150
+// console.log(num1 + num2)
+// if( typeof(num1) === 'number' ) {
+//     console.log(num1, " is a number")
+//     if( typeof(num2) === 'number' ) {
+//         console.log(num2, " is a number")
+//         console.log(num1 + num2)
+//     }
+// }
+
+// Logical Gates
+// AND ->
+// a    b       o/p
+// 0    0       0
+// 0    1       0
+// 1    0       0
+// 1    1       1
+
+// XOR ->
+// a    b       o/p
+// 0    0       0
+// 0    1       1
+// 1    0       1
+// 1    1       0
+
+// OR ->
+// a    b       o/p
+// 0    0       0
+// 0    1       1
+// 1    0       1
+// 1    1       1
+
+// NOT ->
+// a       o/p
+// 0       1
+// 1       0
+
+// Q -> You are given with two +ve values, add them and print the sqaure , if either of the one is negative, print the cube of the differnce and if both values are -ve print to give correct input
+var1 = 5
+var2 = 2
+
+// Global Declaration
+// var sum = 0
+
+// if(var1 > 0 && var2 > 0) {
+//     var sum = 0
+//     sum = var1 + var2
+//     console.log(sum * sum)
+// } else if(var1 < 0 ^ var2 < 0) {
+//     let diff
+//     diff = var1 - var2
+//     console.log(diff * diff * diff);
+// } else {
+//     console.warn('Enter correct inputs')
+// }
+
+// console.log('Sum is - ', sum)
+// console.log('Diffrence is - ', diff)
+
+
+// ES6 Scopes -> var -> public, let -> private and const -> private
+
+// var -> a public identifier, accessed inside or outside the block
+// let -> a private identifier, accessed inside the block
+// const -> a private identifier, accessed inside the block BUT it cannot be declared and not initialised ALSO const variable cannot be changed.
+
+// DONOT DO THIS -> const pi
+// const pi = 3.14
+// // DONOT DO THIS -> pi = 2.34
+
+// // Terniary Operators (? & :) -> if & else
+// // condition ? True : False
+// const someValue = -10
+// someValue >= 0 ? console.log('POSITOVE') : console.log('NEGATIVE')
+
+// INC / DEC OPERATORS
+
+// let num = 10
+// console.log(num + 1)
+// postfix expression
+// console.log(num++)
+// console.log(num)
+// // prefix expression
+// console.log(++num)
+
+// num += value | num = num + value
+// num -= value | num = num - value
+// num *= value | num = num * value
+// num /= value | num = num / value
+// num %= value | num = num % value
+// console.log(num %= 2)
