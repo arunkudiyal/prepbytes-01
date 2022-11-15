@@ -1,4 +1,9 @@
 // JAVACRIPT
+
+
+// ANYTHING & EVERYTHING IN JAVASCRIPTS ARE OBJECT
+
+
 // 1. JS is an intepreted lang -> executes line-by-line
 // 2. JS is helpful for making dynamic (on run-time) Front_End Applications using DOM & AJAX
 // 3. JS is a programming language (it will make decision for you), Its a complete OOPs
@@ -128,8 +133,8 @@
 // 1       0
 
 // Q -> You are given with two +ve values, add them and print the sqaure , if either of the one is negative, print the cube of the differnce and if both values are -ve print to give correct input
-var1 = 5
-var2 = 2
+// var1 = 5
+// var2 = 2
 
 // Global Declaration
 // var sum = 0
@@ -170,10 +175,11 @@ var2 = 2
 // let num = 10
 // console.log(num + 1)
 // postfix expression
-// console.log(num++)
+// console.log(num++) | console.log(num) + num = num+1
+// 
 // console.log(num)
 // // prefix expression
-// console.log(++num)
+// console.log(++num) | num += 1 + console.log(num)
 
 // num += value | num = num + value
 // num -= value | num = num - value
@@ -181,3 +187,54 @@ var2 = 2
 // num /= value | num = num / value
 // num %= value | num = num % value
 // console.log(num %= 2)
+
+// Q -> Voting Sytem
+// gender = 'M'/'F'
+// age = 1-100
+// gender = M, age >= 21, he can vote
+// gender = F, age >= 18, you can vote
+
+// gender = 'F'
+// age = 17
+// if(gender === 'M') {
+//     if(age >= 21) {
+//         console.log('You can vote')
+//     } else {
+//         console.log('You cannot vote')
+//     }
+// } else {
+//     if(gender === 'F') {
+//         if(age >= 18) {
+//             console.log('She can vote')
+//         } else {
+//             console.log('She cannot vote')
+//         }
+//     }
+// }
+
+// gender = 'M'
+// age = 18
+// if(gender == 'M' && age >= 21) {
+//     console.log('You can Vote')
+// } else if(gender == 'F' && age >= 18) {
+//     console.log('You can vote')
+// } else {
+//     console.log('You cannot vote')
+// }
+
+// gender = 'M'
+// age = 21
+// const myVarible = true
+// if((gender == 'M' && age >= 21) || (gender == 'F' && age >= 18)) {
+//     let variableOne = "Arun"
+//     console.log('You can Vote')
+// } else {
+//     console.log('You cannot vote')
+// }
+
+// myVarible = false
+// console.log(variableOne)
+
+
+
+// NON-PRIMATIVE DATA TYPES -
