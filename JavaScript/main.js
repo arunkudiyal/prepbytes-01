@@ -1,7 +1,7 @@
 // JAVACRIPT
 
 
-// ANYTHING & EVERYTHING IN JAVASCRIPTS ARE OBJECT
+// ANYTHING & EVERYTHING IN JAVASCRIPT ARE OBJECT
 
 
 // 1. JS is an intepreted lang -> executes line-by-line
@@ -235,6 +235,122 @@
 // myVarible = false
 // console.log(variableOne)
 
+//             "01234567891011"
+// let myString = "Arun Kudiyal"
+// It will create an object of the certian type
+// console.log(typeof(myNumber))
+// JAVA - int myNumber = 100
+
+// Methods / Function to update / manipulate data / Operation
+// console.log( myString.toUpperCase() )
+// console.log( myString.toLowerCase() )
+// console.log( myString.charAt(6) )
 
 
 // NON-PRIMATIVE DATA TYPES -
+
+// 1. Array - [  ] -> A variable which contains multiple different variable inside it | Array always start from index 0
+// const myVar = 100
+
+// const fruits = [ "Apple", "Banana", "Orange", "Pears", "Watermelon" ]
+// console.log(fruits)
+
+// // console.log( Array.isArray(myVar) )
+// // How to access the values -> using index value -> arrName[indexNo]
+// console.log(fruits[0])
+// console.log(fruits[1])
+// console.log(fruits[2])
+// console.log(fruits[3])
+// console.log(fruits[4])
+
+// const myArray = [100, "Arun Kudiyal", true, null, undefined]
+// console.log(myArray[0])
+// console.log(myArray[1])
+// console.log(myArray[2])
+// console.log(myArray[3])
+
+// myArray[6] = "New Value"
+// console.log(myArray)
+//              [ [00, 01, 02], [10, 11, 12], [20, 21, 22] ]
+// const myArray = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]
+// LENGTH
+// console.log(myArray.length)
+// // Access 5
+// console.log(myArray[1][1])
+
+
+// 2. Object - {  } -> A variable which contains multiple differnt data types but in the form of key: value pair
+// const obj = { key1: val1, key2: val2 }
+// const user = {
+//     name: 'User One',
+//     age: 23,
+//     isVerified: true,
+//     hobbies: ["Play Cless", "Singing", "Reading Novels"],
+//     address: {
+//         street: 'Street 1',
+//         city: 'Chandigarh',
+//         state: 'Chandigarh',
+//         country: 'India'
+//     }
+// }
+
+// console.log(user)
+
+// Access the object keys - (.)
+// console.log('The name of the user is ', user.name)
+// console.log(user.isVerified)
+// console.log(user.age)
+// ` ${ anyVariable } `
+// console.log(`One of the hobbies of the user is ${user.hobbies[0]}`)
+// console.log(`Complete address the user is Street - ${user.address.street}, City - ${user.address.city}, State - ${user.address.state}, Country - ${user.address.country}`)
+
+// console.log(user.address)
+
+
+// 3. Array of Objects - [ {}, {}, {}, {}, ... ]
+const users = [
+    {
+        name: 'User One',
+        age: 20,
+        isVerified: true,
+        hobbies: ["Studying", "Sleeping", "Eating"],
+        address: {
+            street: 'Street 1',
+            city: 'Dehradun',
+            state: 'Uttarakhand',
+            country: 'India'
+        }
+    },
+    {
+        name: 'User Two',
+        age: 27,
+        isVerified: true,
+        hobbies: ["Coding", "Irritate", "Play Soccer"],
+        address: {
+            street: 'Street 1',
+            city: 'Chandigarh',
+            state: 'Chandigarh',
+            country: 'India'
+        }
+    },
+    {
+        name: 'User Three',
+        age: 33,
+        isVerified: true,
+        hobbies: ["Play Cless", "Singing", "Reading Novels"],
+        address: {
+            street: 'Street 1',
+            city: 'Chandigarh',
+            state: 'Chandigarh',
+            country: 'India'
+        }
+    }
+]
+
+// Access the data from AOO -
+console.log(`The city of ${users[0].name} is ${users[0].address.city}`)
+console.log(`The hobbies of ${users[1].name} is ${users[1].hobbies[0]}, ${users[1].hobbies[1]} and ${users[1].hobbies[2]}`)
+
+// 4. JSON
+
+// JS Functions - 
