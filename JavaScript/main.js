@@ -273,10 +273,11 @@
 // console.log(myArray)
 //              [ [00, 01, 02], [10, 11, 12], [20, 21, 22] ]
 // const myArray = [ [1, 2, 3], [4, 5, 6], [7, 8, 9] ]
+// console.log(myArray)
 // LENGTH
 // console.log(myArray.length)
-// // Access 5
-// console.log(myArray[1][1])
+// Access 5
+// console.log(myArray[2][2])
 
 
 // 2. Object - {  } -> A variable which contains multiple differnt data types but in the form of key: value pair
@@ -308,49 +309,170 @@
 
 
 // 3. Array of Objects - [ {}, {}, {}, {}, ... ]
-const users = [
-    {
-        name: 'User One',
-        age: 20,
-        isVerified: true,
-        hobbies: ["Studying", "Sleeping", "Eating"],
-        address: {
-            street: 'Street 1',
-            city: 'Dehradun',
-            state: 'Uttarakhand',
-            country: 'India'
-        }
-    },
-    {
-        name: 'User Two',
-        age: 27,
-        isVerified: true,
-        hobbies: ["Coding", "Irritate", "Play Soccer"],
-        address: {
-            street: 'Street 1',
-            city: 'Chandigarh',
-            state: 'Chandigarh',
-            country: 'India'
-        }
-    },
-    {
-        name: 'User Three',
-        age: 33,
-        isVerified: true,
-        hobbies: ["Play Cless", "Singing", "Reading Novels"],
-        address: {
-            street: 'Street 1',
-            city: 'Chandigarh',
-            state: 'Chandigarh',
-            country: 'India'
-        }
-    }
-]
+// const users = [
+//     {
+//         name: 'User One',
+//         age: 20,
+//         isVerified: true,
+//         hobbies: ["Studying", "Sleeping", "Eating"],
+//         address: {
+//             street: 'Street 1',
+//             city: 'Dehradun',
+//             state: 'Uttarakhand',
+//             country: 'India'
+//         }
+//     },
+//     {
+//         name: 'User Two',
+//         age: 27,
+//         isVerified: true,
+//         hobbies: ["Coding", "Irritate", "Play Soccer"],
+//         address: {
+//             street: 'Street 1',
+//             city: 'Chandigarh',
+//             state: 'Chandigarh',
+//             country: 'India'
+//         }
+//     },
+//     {
+//         name: 'User Three',
+//         age: 33,
+//         isVerified: true,
+//         hobbies: ["Play Cless", "Singing", "Reading Novels"],
+//         address: {
+//             street: 'Street 1',
+//             city: 'Chandigarh',
+//             state: 'Chandigarh',
+//             country: 'India'
+//         }
+//     }
+// ]
+
+// console.log(`The hobby of the user ${users[2].name} is - ${users[2].hobbies[1]}`)
 
 // Access the data from AOO -
-console.log(`The city of ${users[0].name} is ${users[0].address.city}`)
-console.log(`The hobbies of ${users[1].name} is ${users[1].hobbies[0]}, ${users[1].hobbies[1]} and ${users[1].hobbies[2]}`)
+// console.log(`The city of ${users[0].name} is ${users[0].address.city}`)
+// console.log(`The hobbies of ${users[1].name} is ${users[1].hobbies[0]}, ${users[1].hobbies[1]} and ${users[1].hobbies[2]}`)
+
+
+// Q -> 
+// REFERNCE VARIBALE
+// arr1 = memory location
+// arr1 = #0abcef
+// const arr1 = [10, 20, 30, 40, 50]
+
+// // arr2 = #0abcef
+// const arr2 = arr1
+
+// arr2[5] = 1000
+
+// console.log(arr1)
+// console.log(arr2)
+
+// const myObj1 = {
+//     name: 'Arun',
+//     email: 'abc@xyz.com'
+// }
+
+// const myObj2 = myObj1
+// console.log(myObj1)
+// console.log(myObj2)
+
+// myObj1.number = 1234567890
+
+// console.log(myObj1)
+// console.log(myObj2)
+
+
+// arr1 = [10, 20, 30, 40, 50]
+// // Operator -> Spread Operator
+// // arr2 = ...arr1 -> Copy the values from arr1 to arr2
+// // arr2 = [ ] // Creating a physical array called arr2
+// arr2 = [ ...arr1 ]
+
+// arr2[5] = 100
+
+// console.log(arr1);
+// console.log(arr2);
+
+// const obj1 = {
+//     name: 'Arun',
+//     age: 25
+// }
+
+// obj2 = { ...obj1 }
+
+// obj2.email = "abc@xyz.com"
+
+// console.log(obj1)
+// console.log(obj2)
+
 
 // 4. JSON
+
+// LOOPS :- If you are doing any repitive operations, you can use loops instead
+// 1. for -> for(;;)
+// for(;;) {
+//     // Statement
+// }
+
+// for(initialValue; condition; increment/decrement) {
+//     // Statement
+// }
+
+// const ages = [100, 20, 25, 60, 12]
+// console.log(ages)
+
+// // index - 0 to (n-1) -> 0 to 4
+// // for(let variable=0; variable < ages.length; variable+=1) {
+// //     console.log(ages[variable])
+// // }
+
+// for(let variable=ages.length-1; variable >= 0; variable-=1) {
+//     console.log(ages[variable])
+// }
+
+// number = 3
+// for(let num=number; num <= number*10; num+=number) {
+//     console.log(`${number} x ${num/number} = ${num}`)
+// }
+
+// number = 6
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
+// * * * * * *
+
+// number = 5
+// *
+// * *
+// * * *
+// * * * *
+// * * * * *
+
+// number = 4
+// *
+// * *
+// * * *
+// * * * *
+
+// 2. while -> where your start and end is unknown
+// Q -> Print the values of the array until zero appears
+// arr1 = [0, 10, 23, -45, 32, 19, 20, 46]
+// let variable = 0
+// while(arr1[variable] != 0) {
+//     console.log(arr1[variable])
+//     variable += 1
+// }
+
+// 3. do-while -> EXIT CONTROLLED LOOP
+// arr1 = [10, 23, 0, -45, 32, 19, 20, 46]
+// let variable = 0
+// do {
+//     console.log(arr1[variable])
+//     variable += 1
+// } while(arr1[variable] != 0)
 
 // JS Functions - 
