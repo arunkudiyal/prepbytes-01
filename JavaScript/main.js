@@ -475,4 +475,24 @@
 //     variable += 1
 // } while(arr1[variable] != 0)
 
+// ARRAY IN-BUILT METHODS
+const arr = [10, 20, 30, 40, 50]
+const arr2 = [100, 200, 30, 400]
+console.log(arr)
+
+// Insert
+arr.push(100)
+console.log(arr)
+
+// Combining arrays
+const newArr = arr.concat(arr2)
+console.log(newArr)
+
+// Find Index By value
+console.log(arr.indexOf(500))
+
+// Remove
+arr.splice(3, 2)
+console.log(arr)
+
 // JS Functions - 
