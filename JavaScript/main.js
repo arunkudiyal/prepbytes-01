@@ -476,23 +476,111 @@
 // } while(arr1[variable] != 0)
 
 // ARRAY IN-BUILT METHODS
-const arr = [10, 20, 30, 40, 50]
-const arr2 = [100, 200, 30, 400]
-console.log(arr)
+// const arr = [10, 20, 30, 40, 50]
+// const arr2 = [100, 200, 30, 400]
+// console.log(arr)
 
 // Insert
-arr.push(100)
-console.log(arr)
+// arr.push(100)
+// console.log(arr)
 
 // Combining arrays
-const newArr = arr.concat(arr2)
-console.log(newArr)
+// const newArr = arr.concat(arr2)
+// console.log(newArr)
 
 // Find Index By value
-console.log(arr.indexOf(500))
+// console.log(arr.indexOf(500))
 
 // Remove
-arr.splice(3, 2)
-console.log(arr)
+// arr.splice(3, 2)
+// console.log(arr)
 
-// JS Functions - 
+
+// JS Functions -> A way of creating seperate block of codes, to re-use them through the code / applications
+// Q -> you are given with two nos, give the sum back as an answer
+
+// SYNTAX -> function functionName( parameters ) { ...Your Operations }
+
+// parameters -> a variable value which is assigned when the function comes to work
+
+// function sum(num1, num2) {
+//     // operation - print the sum of num1 and num2
+//     console.log(num1 + num2)
+// }
+
+// function mySum(n1, n2) {
+//     return (n1 + n2)
+// }
+
+// function square(sum) {
+//     return sum * sum
+// }
+
+// use / call the function
+// sum(100, 200)
+// sum(10, 30)
+// sum(100, 10)
+// sum(50, 70)
+
+// Q -> given two numbers, add the values and generate the square of the sum
+// Eg -> 10, 20 O/P -> 900
+// const add = mySum(10, 15)
+// const add1 = mySum(2, 5)
+// const add2 = mySum(1, 7)
+// const add3 = mySum(8, 4)
+
+// const res1 = square(add)
+// const res2 = square(add1)
+// const res3 = square(add2)
+// const res4 = square(add3)
+
+// console.log(res1, res2, res3, res4)
+
+// Q -> given a value of marks a student in 5 subjects, you have to tell whether the student is fail(percentage < 30%) or pass(percentage >= 31)
+
+// function sum(marks) {
+//     sumation = 0
+//     for(let i=0; i < marks.length; i++) {
+//         sumation += marks[i]
+//     }
+
+//     // console.log(sumation)
+//     return sumation
+// }
+
+// function calculatePercent(total) {
+//     const percent = (total / 500) * 100
+//     return percent
+// }
+
+// function checkResult(percentage) {
+//     if(percentage < 30) {
+//         return -1
+//     } else {
+//         return 1
+//     }
+// }
+
+// function checkPassOrFail(marksArray) {
+//     const sumOfMarks = sum(marksArray)
+//     const percentageOfMraks = calculatePercent(sumOfMarks)
+//     const ifFailOrPass = checkResult(percentageOfMraks)
+
+//     if(ifFailOrPass === -1) {
+//         return "Fail"
+//     } else {
+//         return "Pass"
+//     }
+// }
+
+// // Q -> given an array, find the sum of the elements in the array
+// // Q -> given an array, sum the values and cube the result
+// // Q -> given with array, find if the sum is greater than 200 or not
+
+// const marks_1 = [10, 20, 30, 40, 50]
+// const reuslt_1 = checkPassOrFail(marks_1)
+// console.log(`Your result is ${reuslt_1}`)
+
+// const marks_2 = [10, 20, 30, 40, 10]
+// const reuslt_2 = checkPassOrFail(marks_2)
+// console.log(`Your result is ${reuslt_2}`)
