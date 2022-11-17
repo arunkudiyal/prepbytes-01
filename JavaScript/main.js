@@ -584,3 +584,50 @@
 // const marks_2 = [10, 20, 30, 40, 10]
 // const reuslt_2 = checkPassOrFail(marks_2)
 // console.log(`Your result is ${reuslt_2}`)
+
+// function calculatePercent(total) {
+//     if(typeof(total) === 'number') {
+//         const percent = (total / 500) * 100
+//         return percent
+//     } else {
+//         return -1
+//     }
+// }
+
+// const res1 = calculatePercent([10, 20, 30, 40])
+// console.log(res1)
+
+
+// ES6 Arrow Functions -> to create an represent any function like a varaible
+
+// function functionName(paramemters) {  ...body }
+
+// Any varible in JS, is an Object
+// YOUR FUNCTIONS SHOULD ALSO BE TREATED AS OBJECTS IN JS, BY CRETAING FUNCTIONS AS VARIABLES
+
+// SYNTAX 
+// const functionName = ( parameters ) => { ...body }
+
+// function sum(n1, n2) {
+//     if(typeof(n1) === 'number' && typeof(n2) === 'number') {
+//         return n1 + n2
+//     } else {
+//         return "Invalid Input"
+//     }
+// }
+
+// const newSum = (num1, num2) => {
+//     if(typeof(num1) === 'number' && typeof(num2) === 'number') {
+//         return num1 + num2
+//     } else {
+//         return "Invalid Input"
+//     }
+// }
+
+// console.log(typeof(newSum))
+
+// const ans1 = sum(100, 200)
+// console.log(ans1)
+
+// const ans2 = newSum(10, 20)
+// console.log(ans2)
