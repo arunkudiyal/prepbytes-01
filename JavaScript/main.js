@@ -598,7 +598,7 @@
 // console.log(res1)
 
 
-// ES6 Arrow Functions -> to create an represent any function like a varaible
+// ES6 - ES2015 -> Arrow Functions -> to create an represent any function like a varaible
 
 // function functionName(paramemters) {  ...body }
 
@@ -631,3 +631,24 @@
 
 // const ans2 = newSum(10, 20)
 // console.log(ans2)
+
+// * 
+// * *
+// * * *
+// * * * *
+// * * * * *
+const n = 50
+let starString = ''
+// Manage row (rows = 5)
+for(let row = 0; row < n; row++) {
+    // Manage Coloumns (cols = 5) 
+    for(col=0; col < row + 1; col++) {
+        // process.stdout.write("*")
+        // starString.concat('* ')
+        starString += '* '
+        // console.log('* ')
+    }
+    starString += "<br />"
+    // console.log("\n")
+}
+document.querySelector('#my-div').innerHTML = starString
