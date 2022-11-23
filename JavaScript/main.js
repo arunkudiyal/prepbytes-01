@@ -654,3 +654,83 @@
 // document.querySelector('#my-div').innerHTML = starString
 
 
+// ARRAY METHODS
+// 1. Array Constructor
+// const arrayObj = new Array()
+// arrayObj[0] = 100
+// arrayObj[1] = 200
+// arrayObj[2] = 300
+// arrayObj[3] = 400
+// console.log(arrayObj)
+
+// console.log(ages.sort())
+
+// Array Methods / Functions
+// 1. add an element at the end of the array
+// const newLength = ages.push(100)
+// console.log(ages)
+// console.log(newLength)
+
+// 2. Remove an element from the array & returns the array of deleted elts.
+// ages.splice(index, deleteCount, ...itemsToBeInserted)
+// Variation 1 - only element one elt -> splice(index, 1)
+// Variation 2 - only element multiple elt -> splice(index, noOfEltsToBeDeleted)
+// Variation 3 - only element multiple elt, replace it with other elts -> splice(index, noOfEltsToBeDeleted, ...items)
+
+// const deletedElts = ages.splice(4, 3, 200, 300, 400, 500)
+// console.log(ages)
+// console.log(deletedElts)
+
+// // 3. Sort an array
+// agesSample = [...ages]
+// agesSample.sort()
+
+// console.log(agesSample)
+
+// ES6 Higher Order Array Methods -> theses methods will access each and every elt/object in the array
+const employees = [
+    {id: 10021, name: 'Employee 1', designation: 'IT', start: 1987, end: 2022},
+    {id: 10022, name: 'Employee 2', designation: 'Sales', start: 2010, end: 2012},
+    {id: 10023, name: 'Employee 3', designation: 'HR', start: 1999, end: 2017},
+    {id: 10024, name: 'Employee 4', designation: 'Technical', start: 1981, end: 2018},
+    {id: 10025, name: 'Employee 5', designation: 'IT', start: 2000, end: 2005},
+    {id: 10026, name: 'Employee 6', designation: 'IT', start: 1997, end: 2008},
+    {id: 10027, name: 'Employee 7', designation: 'Technical', start: 1999, end: 2009},
+    {id: 10028, name: 'Employee 8', designation: 'HR', start: 1991, end: 2004},
+    {id: 10029, name: 'Employee 9', designation: 'Sales', start: 1993, end: 2013},
+    {id: 10030, name: 'Employee 10', designation: 'HR', start: 1986, end: 2020},
+    {id: 10031, name: 'Employee 11', designation: 'Sales', start: 1980, end: 2009}
+]
+const ages = [21, 18, 15, 28, 43, 65, 46, 79, 57, 90, 59, 12, 1, 74]
+
+// Q -> From the employees array, loop around the array and print the name of each employee
+// for(let employee=0; employee < employees.length; employee++) {
+//     console.log( employees[employee].end )
+// }
+
+// 1. forEach() -> Common operation on all the elts.
+// Syntax -> arrayName.forEach( (iteratingValue, index, array) => {} )
+
+// employees.forEach( (employee) => {console.log(employee.name)} )
+// ages.forEach( (age, index) => console.log(index) )
+
+// 2. map() -> Maps to a aprticular property/element in the array
+// employees.map( (employee, index, array) => {console.log(`The name of the employee with Employee ID of ${employee.id} is ${employee.name} which is at index ${index}`, array)} )
+// const employeeNames = employees.map( (employee) => employee.name )
+// console.log(employeeNames)
+
+// Q -> Diff b/w map and forEach
+
+// 3. filter()
+// const employeesOver5Years = employees.filter( (employee) => employee.designation === 'IT' )
+// console.log(employeesOver5Years)
+
+// 4. reduce()
+
+// 5. sort()
+
+// Nest each array methods
+// Q -> Names of all the employees who's dept is IT
+// const employeeNames = employees.map(emp => emp.name)
+const filterArray = employees.filter(employee => employee.designation === 'IT').map(employee => employee.name)
+console.log(filterArray)
