@@ -637,18 +637,20 @@
 // * * *
 // * * * *
 // * * * * *
-const n = 50
-let starString = ''
-// Manage row (rows = 5)
-for(let row = 0; row < n; row++) {
-    // Manage Coloumns (cols = 5) 
-    for(col=0; col < row + 1; col++) {
-        // process.stdout.write("*")
-        // starString.concat('* ')
-        starString += '* '
-        // console.log('* ')
-    }
-    starString += "<br />"
-    // console.log("\n")
-}
-document.querySelector('#my-div').innerHTML = starString
+// const n = 50
+// let starString = ''
+// // Manage row (rows = 5)
+// for(let row = 0; row < n; row++) {
+//     // Manage Coloumns (cols = 5) 
+//     for(col=0; col < row + 1; col++) {
+//         // process.stdout.write("*")
+//         // starString.concat('* ')
+//         starString += '* '
+//         // console.log('* ')
+//     }
+//     starString += "<br />"
+//     // console.log("\n")
+// }
+// document.querySelector('#my-div').innerHTML = starString
+
+
