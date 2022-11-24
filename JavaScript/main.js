@@ -775,3 +775,108 @@
 // const employeeNames = employees.map(emp => emp.name)
 // const filterArray = employees.filter(employee => employee.designation === 'IT').map(employee => employee.name)
 // console.log(filterArray)
+
+
+// JS Strings & String Methods -> String is an array pool of charachters, where each char is accessed by an index value.
+
+// Way 1 = Using '', "", ``
+// const str1 = 'Hello...'
+// const str2 = "Hello..."
+// const str3 = `This is a string`
+
+// Way 2 - String Constructor
+// const myStr = new String('This is a sample String')
+
+// NEGATIVE INDEXING WORK IN JS BUT USING A SPECIAL METHOD
+// console.log( myStr[-1] )     THIS IS WRONG
+
+// STRING METHODS - 
+// 1. charAt()
+// const myChar = str3.charAt(6)
+// const myChar2 = str3.charAt(-3)     // returns a null string (\0)
+// console.log(myChar)
+
+// 2. at() -> Positive + Negetaive
+// console.log( str3.at(-1) )
+// console.log( str3.at(-2) )
+
+// 3. endsWith() -> T / F -> condition being statidfied
+// if( myStr.endsWith('i') ) {
+//     console.log('Yes, ends with g')
+// } else {
+//     console.log('No, doesnt end with g')
+// }
+
+// 4. startsWith -> T/ F
+// if( myStr.startsWith('t') ) {
+//     console.log('Yes, starts with T')
+// } else {
+//     console.log('No, doesnt end with T')
+// }
+
+// 5. contains()
+// if( myStr.includes('is not a') ) {
+//     console.log('Yes, includes is a')
+// } else {
+//     console.log('No, doesnt include is a')
+// }
+
+// 6. Escape Sequences -> 
+// const myStr = new String('This is a sample String')
+
+// const str1 = 'Hello...'
+// const str2 = "hello..."
+// const str3 = `This is a string`
+
+// if( myStr.includes('is not a') ) {
+//     console.log('Yes, includes is a')
+// } else {
+//     console.log('No, doesn\'t include \"is a\"')
+// }
+
+// console.log('Hello...\nExample of Line Break')
+// console.log('Hello...\tExample of Line Break')
+// console.log('Hello...\\ Example of Back Slash')
+
+
+// 7. toLowerCase() vs. toUpperCase()
+// console.log( str1.toUpperCase() )
+// console.log( str1.toLowerCase() )
+
+// 8. comparision between strings
+// if(str1.toUpperCase() == str2.toUpperCase()) {
+//     console.log('Yes, they are same')
+// } else {
+//     console.log('No, they are not same')
+// }
+
+// Special Charchaters -> ASCII Codes
+// for(let i=65; i <= 122; i++) {
+//     console.log(`ASCII Symbol for ${i} is `, String.toString(i))
+// }
+
+// 7. toString()
+// console.log(String.toString("H"))
+
+// 8. concat()
+// let str1 = 'this is'
+// let str2 = 'the complete string'
+// // const completeString = str1.concat(' ', str2, '. And this is the continuation')
+// const completeString = str1 + " " + str2 + ". And this is the continuation"
+// console.log(completeString)
+
+// const sampleStr = "Apple, Banana, Orange, Pear, Watermelon, Mango"
+// const sampleNumberString = "1, 2, 3, 4, 5, 6, 7, 8, 9, 10"
+// // 9. split()
+// const fruits = sampleStr.split(', ')
+// console.log(fruits)
+
+
+// const nums = sampleNumberString.split(', ')
+// console.log(nums)
+
+// 10. slice()
+
+// 11. join()
+
+// 12. replace()
