@@ -880,3 +880,70 @@
 // 11. join()
 
 // 12. replace()
+
+// function multiply(a, b) {
+//     if(typeof(a) === 'number' && typeof(b) === 'number') {
+//         return a * b
+//     } else {
+//         return "Invalid Input"
+//     }
+// }
+
+// SYNTAX -> 
+// const variableName/funcName = (params) => { ...bodyOfFunc }
+// ES6 Arrow Functions
+// const multiplyTowNos = (num1, num2) => {
+//     if(typeof(num1) === 'number' && typeof(num2) === 'number') {
+//         return num1 * num2
+//     } else {
+//         return "Invalid Input"
+//     }
+// }
+
+// const ans1 = multiplyTowNos(20, 33)
+// console.log(ans1)
+
+// const str1 = 'Hello, Welocme to JS'
+// const convertedArray = []
+// for(let i=0; i < str1.length; i++) {
+//     convertedArray.push(str1.charAt(i))
+// }
+// console.log(convertedArray)
+
+
+// [2, 3, 4, 1, 2, 4, 5]
+// D -> 1 - 31 = 7
+// M -> 1 - 12 = 3
+// count = 0 -> 1 -> 2 
+
+// M digit sequence
+// D addition M digit dequence
+
+// const arr = [2, 3, 4, 1, 2, 4, 5]
+// // console.log(arr)
+// const slicedArray = arr.slice(0, 5)
+// console.log(slicedArray)
+
+// // arr.reduce( (val1, val2) => OPERATION, initialValue )
+// const totalSum = arr.reduce( (val1, val2) => val1 + val2, 0)
+// console.log(totalSum)
+// 1st iteration - 
+// val1 = 2, val2 = 3
+// temp = 0
+// temp = temp + val1 + val2
+// temp = 0 + 2 + 3 = 5
+
+// 2nd Iteration
+// val1 = 4, val2 = 1
+// temp = 5
+// temp = temp + num1 + num2
+// temp = 5 + 4 + 1 = 10
+
+const arr = [2, 3, 4, 1, 1, 2, 2, 4, 5]
+console.log(arr)
+
+// const newArray = arr.filter( elt => elt === 1 )
+// console.log(newArray)
+
+// console.log( arr.indexOf(2) )   // returns you the starting index found in the array
+console.log( arr.lastIndexOf(2) )
