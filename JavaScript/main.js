@@ -939,11 +939,70 @@
 // temp = temp + num1 + num2
 // temp = 5 + 4 + 1 = 10
 
-const arr = [2, 3, 4, 1, 1, 2, 2, 4, 5]
-console.log(arr)
+// const arr = [2, 3, 4, 1, 1, 2, 2, 4, 5]
+// console.log(arr)
 
 // const newArray = arr.filter( elt => elt === 1 )
 // console.log(newArray)
 
 // console.log( arr.indexOf(2) )   // returns you the starting index found in the array
-console.log( arr.lastIndexOf(2) )
+// console.log( arr.lastIndexOf(2) )
+
+// let s = 'Hello'
+// console.log( s.length )
+
+// const myArray = []
+// myArray.in
+
+// const myArr = [ 'p', 'e', 'p', 'e' ]
+// console.log( myArr.sort( ) )
+// console.log('A' + 1)
+
+
+
+// OBJECTS -> A way of represting any data/info in the form of key: value
+// ARRAYS AND OBJECTS BOTH ARE REFERENCE TYPE
+
+// 1. Using Object Literal - {  }
+// const myObj = {
+//     // type(str): constant(int, str, bool, [], {}, ... )
+//     property1: 'value1',
+//     property2: 100,
+//     property3: [10, 20, 30, 100, 300],
+//     property4: { p1: 'v1', p2: 'v2', p3: 'v3' }
+// }
+// myObj.property5 = 'New Introduced Property'
+// const myObjCopy = { ...myObj }
+// console.log(myObjCopy)
+// // console.log(myObj)
+
+// 2. Using Object() Constructor
+// const users = new Object()
+// users.userName = 'User Name'
+// users.password = 'my_user_pwd'
+// users.address = new Object()
+// users.address.street = 'My Street - 1'
+// users.address.city = 'My City'
+// console.log(users)
+
+// 3. Using Constructor Function
+function myUser(userId, userName, userEmail, userAddress, userHobbies, changeUser) {
+    this.id = userId
+    this.name = userName
+    this.email = userEmail
+    this.address = userAddress
+    this.hobbies = userHobbies
+
+    this.change = (newName) => {
+        this.name = newName
+    }
+}
+
+const userOne = new myUser(100, 'User One', 'userOne@xyz.com', {city: 'XYZ', state: 'ABC'}, ['h1', 'h2', 'h3'] )
+console.log(userOne)
+
+userOne.change('Harish')
+console.log(userOne)
+
+console.log( Object.keys(userOne) )
+console.log( Object.values(userOne) )
