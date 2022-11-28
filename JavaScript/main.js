@@ -986,23 +986,43 @@
 // console.log(users)
 
 // 3. Using Constructor Function
-function myUser(userId, userName, userEmail, userAddress, userHobbies, changeUser) {
-    this.id = userId
-    this.name = userName
-    this.email = userEmail
-    this.address = userAddress
-    this.hobbies = userHobbies
+// function myUser(userId, userName, userEmail, userAddress, userHobbies) {
+//     this.id = userId
+//     this.name = userName
+//     this.email = userEmail
+//     this.address = userAddress
+//     this.hobbies = userHobbies
 
-    this.change = (newName) => {
-        this.name = newName
-    }
-}
+//     this.change = (newName) => {
+//         this.name = newName
+//     }
 
-const userOne = new myUser(100, 'User One', 'userOne@xyz.com', {city: 'XYZ', state: 'ABC'}, ['h1', 'h2', 'h3'] )
-console.log(userOne)
+//     this.changeData = function(newId, newName, newEmail) {
+//         this.name = newName
+//         this.id = newId,
+//         this.email = newEmail
+//     }
+// }
 
-userOne.change('Harish')
-console.log(userOne)
+// const userOne = new myUser(100, 'User One', 'userOne@xyz.com', {city: 'XYZ', state: 'ABC'}, ['h1', 'h2', 'h3'] )
+// console.log(userOne)
 
-console.log( Object.keys(userOne) )
-console.log( Object.values(userOne) )
+// userOne.change('Harish')
+// console.log(userOne)
+
+// console.log( Object.keys(userOne) )
+// console.log( Object.values(userOne) )
+
+// let newStr = ''
+// let oldStr = 'JavaScript'
+// let charArr = []
+
+// for(let i=0; i < oldStr.length; i++) {
+//     charArr.push(oldStr.charArr(i))
+// }
+
+// charArr[4] = 's'
+
+// for(let i=0; i < oldStr.length; i++) {
+//     newStr += oldStr.charAt(i)
+// }
