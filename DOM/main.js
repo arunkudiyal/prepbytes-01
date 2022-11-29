@@ -1,5 +1,6 @@
 // DOCUMENT OBJECT MODEL (DOM)
 // console.dir(document)
+// console.log(document)
 
 // console.log(document.URL)
 // console.log(document.doctype)
@@ -15,6 +16,8 @@
 // document.all[10].innerHTML = '<h3>Hi, Welcome to the app</h3>'
 // console.log(document.all[10])
 
+// document.all[10].innerHTML = '<h3>Hello...</h3>'
+// document.all[10].textContent = '<h3>Hello...</h3>'
 
 // DOM IDENTIFIER METHODS :-
 
@@ -64,3 +67,86 @@
 // document.getElementById('my-doc-body').style.background = `url('../HTML/assets/img/sample_img.jpg')`
 
 // console.log(items)
+
+// 4. querySelector() -> id + className + tagName --> Returns ONE element which satisfies the condition
+// const elt = document.querySelector('#main-header')
+// const items = document.querySelector('.list-group-item')
+// const headingTwo = document.querySelector('h2')
+
+// 5. querySelectorAll() -> id + className + tagName
+// const someIds = document.querySelectorAll('#main-header')
+// console.log(someIds)
+
+// const headingTwo = document.querySelectorAll('h2')
+// console.log(headingTwo)
+
+// const items = document.querySelectorAll('.list-group-item')
+// console.log(items)
+
+
+
+// EVENTS IN JS
+
+const button = document.querySelector('#btn')
+
+// Syntax --> identifier.addEventListner('nameOfTheEvent', () => {...})
+
+// button.addEventListener('click', () => {
+//     console.log('Button was clicked!')
+// })
+
+// button.addEventListener('dblclick', () => {
+//     console.log('Button was double clicked!')
+// })
+
+
+// document.querySelector('#my-container').addEventListener('mouseenter', () => {
+//     console.log('Curser was entered in the box')
+// })
+
+// document.querySelector('#my-container').addEventListener('mouseleave', () => {
+//     console.log('Curser was removed in the box')
+// })
+
+// document.querySelector('#text-input').addEventListener('copy', function() {
+//     console.log('Text was COPIED')
+// })
+
+// document.querySelector('#text-input').addEventListener('cut', () => {
+//     console.log('Text was CUT')
+// })
+
+// document.querySelector('#text-input').addEventListener('paste', () => {
+//     console.log('Text was PASTED')
+// })
+
+// document.querySelector('#text-input').addEventListener('keydown', () => {
+//     console.log('Text was DOWN')
+// })
+
+// document.querySelector('#text-input').addEventListener('keyup', () => {
+//     console.log('Text was UP')
+// })
+
+// document.querySelector('#text-input').addEventListener('keypress', () => {
+//     console.log('Text was PRESSED')
+// })
+
+// const items = document.getElementsByClassName('list-group-item')
+// // console.log(items)
+// items[0].addEventListener('click', () => {
+//     console.log('Item - 1 was clicked!')
+// })
+
+// const items = document.getElementsByClassName('list-group-item')
+// for(let i=0; i < items.length; i++) {
+//     items[i].addEventListener('click', () => {
+//         console.log('Hello...')
+//     })
+// }
+
+// EVENT PARAMETER
+
+document.getElementById('text-input').addEventListener('keydown', (event) => {
+    console.log(event.target.value)
+})
