@@ -233,11 +233,13 @@ const button = document.querySelector('#btn')
 // I want the text but not on run-time but on the button click
 document.querySelector('#submitBtn').addEventListener('click', (e) => {
     e.preventDefault()
-    text = document.querySelector('#text-input').value
+    const text = document.querySelector('#text-input').value
     
-    const newLi = document.createElement('li')
-    newLi.textContent = text
-    newLi.setAttribute('class', 'list-group-item')
+    if(text !== '') {
+        const newLi = document.createElement('li')
+        newLi.textContent = text
+        newLi.setAttribute('class', 'list-group-item')
 
-    document.querySelector('#items').appendChild(newLi)
+        document.querySelector('#items').appendChild(newLi)
+    }
 })
