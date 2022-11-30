@@ -147,6 +147,71 @@ const button = document.querySelector('#btn')
 
 // EVENT PARAMETER
 
-document.getElementById('text-input').addEventListener('keydown', (event) => {
-    console.log(event.target.value)
-})
+// document.getElementById('text-input').addEventListener('keydown', (event) => {
+//     console.log(event.target.value)
+// })
+
+// function clickListner() {
+//     console.log('Button Clicked!')
+// }
+
+// document.querySelector('#btn').addEventListener('click', clickListner)
+
+// FUN ACTIVITY
+// document.querySelector('#my-container').addEventListener('mouseenter', (e) => {
+//     document.querySelector('#my-container').style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 100)`
+// })
+
+// document.querySelector('#my-container').addEventListener('mouseleave', (e) => {
+//     document.querySelector('#my-container').style.backgroundColor = `rgb(${e.offsetX}, ${e.offsetY}, 100)`
+// })
+
+
+// setTimeout -> Execute the same piece of code, with every time delay mentioned
+// setInterval -> Execute the same piece of code, with every time frequency
+
+// setTimeout( () => {
+//     console.log('Hello...')
+// }, 2000 )
+
+// setInterval( () => {
+//     console.log('Hello again...')
+// }, 1000 )
+
+// setInterval( () => {
+//     const date = new Date()
+//     const presentTime = `${date.getHours()} : ${date.getMinutes()} : ${date.getSeconds()}`
+
+//     console.log(presentTime)
+// }, 1000 )
+
+
+// DOM Traversal
+
+// 1. parent - parentElement
+// console.log( document.querySelector('#header-title').parentElement.parentElement.parentElement.parentElement.parentElement )
+
+// document.querySelector('#header-title').parentElement.parentElement.style.fontFamily = 'cursive'
+
+// document.querySelector('#btn').addEventListener('click', () => {
+//     document.querySelector('#header-title').parentElement.parentElement.style.fontFamily = 'cursive'
+// })
+
+// 2. children
+// console.log( document.querySelector('#items').children )
+// const itemsChildren = document.querySelector('#items').children
+// for(let i=0 ; i < itemsChildren.length; i++) {
+//     if(i % 2 === 0) {
+//         itemsChildren[i].style.backgroundColor = '#f4f4f4'
+//     }
+// }
+
+// diff b/w firstChild (considers space / identation) & firstElementChild
+// console.log( document.querySelector('#items').firstElementChild )
+// console.log( document.querySelector('#items').lastElementChild )
+
+// 3.siblings
+// console.log( document.querySelector('#my-form').nextElementSibling.nextElementSibling )
+// console.log( document.querySelector('#my-form').previousElementSibling )
+
+

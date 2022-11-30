@@ -13,7 +13,7 @@
 
   <body id="my-doc-body">
     <header id="main-header" class="bg-success text-white p-4 mb-3">
-      <div class="container">
+      <div id="header-title-parent" class="container">
         <h1 id="header-title">Item Lister</h1>
       </div>
     </header>
@@ -22,13 +22,13 @@
       <div id="main" class="card card-body">
 
         <h2 class="title">Add Items</h2>
-        <form class="form-inline mb-3">
+        <form id="my-form" class="form-inline mb-3">
           <input id='text-input' type="text" class="form-control mr-2" placeholder="Enter item name..." > 
           <input id="submitBtn" type="submit" class="btn btn-dark" value="Submit">
         </form>
 
         <h2 class="title">Items</h2>
-        <ul id="items" class="list-group"> 
+        <ul id="items" class="list-group">
           <li class="list-group-item">Item 1</li> 
           <li class="list-group-item">Item 2</li>
           <li class="list-group-item">Item 3</li>
@@ -38,18 +38,13 @@
           <li class="list-group-item">Item 7</li>
           <li class="list-group-item">Item 8</li>
         </ul> 
-
         <br>
-
-        <div style="height: 400px; width: 100%; background-color: #f4f4f4;" id="my-container"></div>
-
+        <!-- <div style="height: 400px; width: 100%; background-color: #f4f4f4;" id="my-container"></div> -->
         <br>
-
         <!-- <button onclick="console.log('Button was clicked')" id="btn" class="btn btn-dark" id="button">Click Me</button> -->
-
         <button id="btn" class="btn btn-dark" id="button">Click Me</button>
         <script src="./main.js"></script>
       </div>
     </div>
-</body>
+  </body>
 </html>
