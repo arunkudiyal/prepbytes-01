@@ -215,3 +215,29 @@ const button = document.querySelector('#btn')
 // console.log( document.querySelector('#my-form').previousElementSibling )
 
 
+// Create an HTML element using DOM
+// const myDiv = document.createElement('div')
+// myDiv.setAttribute('id', 'my-div-id')
+// myDiv.setAttribute('class', 'my-div-class')
+// myDiv.textContent = 'I just created this div'
+// console.log(myDiv)
+
+
+// ITEM LISTER APPLICATION
+
+// Run Time Text
+// document.querySelector('#text-input').addEventListener('keypress', (e) => {
+//     console.log(e.target.value)
+// })
+
+// I want the text but not on run-time but on the button click
+document.querySelector('#submitBtn').addEventListener('click', (e) => {
+    e.preventDefault()
+    text = document.querySelector('#text-input').value
+    
+    const newLi = document.createElement('li')
+    newLi.textContent = text
+    newLi.setAttribute('class', 'list-group-item')
+
+    document.querySelector('#items').appendChild(newLi)
+})
