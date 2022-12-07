@@ -24,7 +24,7 @@ const addPost = (post, callback1) => {
 const showPosts = ( ) => {
     setTimeout( () => {
         posts.forEach( post => console.log(post.name) )
-    }, 5000 )
+    }, 2000 )
 }
 
 const fun = () => {

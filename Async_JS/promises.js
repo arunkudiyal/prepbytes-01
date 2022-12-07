@@ -31,6 +31,8 @@ const showPosts = ( ) => {
 }
 
 // Execute / Handle a promise
+// SYNTAX :- function_with_promise.then( body_of_resolve ).catch( body_of_reject )
+
 createPost( {id: 6, name: 'Post Six', desc: 'Post Six Desc'} )
     // .then( reolve() )
     .then( () => showPosts() )
