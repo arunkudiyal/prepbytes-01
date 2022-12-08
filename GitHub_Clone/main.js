@@ -26,3 +26,13 @@ xhr.onreadystatechange = () => {
 
 // Step 3 - Send the request
 xhr.send()
+
+// const url = `https://api.github.com/use`
+
+// fetch(url)
+//     .then(result => console.log(result.json()))
+//     .catch(err => console.log(err))
+
+const add = (a, b) => {
+    return a + b
+}
