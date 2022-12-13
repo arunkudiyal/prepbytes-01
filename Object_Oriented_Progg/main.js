@@ -116,10 +116,68 @@
 // console.log(studentOne.getDetials())
 
 // Prototype -> Any object in JS has a private property called prototype -> All the methods / functions defined in the class(ES6) / constructor function (ES5)
-const str1 = new String('This is my string')
-console.log(str1)
-const newStr = str1.__proto__.toUpperCase() 
-console.log(newStr)
+// const str1 = new String('This is my string')
+// console.log(str1)
+// const newStr = str1.__proto__.toUpperCase() 
+// console.log(newStr)
 
 // ES6 -> Arrow Functions
 // ES6 Classes
+// class is a unit which is a basic combination of properties and methods
+
+
+// 1. Encapsulation --> A way of wrapping your properties & methods in a single unit called class
+
+class Car {
+    // properties -> no let, no var, no const
+    // carName
+
+    // private properties
+    #name
+    #type
+    #model
+    // private String name <--> #name
+
+    // Constructor -> piece of code which helps you initialise the class properties 
+    constructor(name, type, model) {
+        // this.propertyName = parameter
+        this.#name = name,
+        this.#type = type,
+        this.#model = model
+    }
+
+    // Getter & Setters Methods
+    getCarName = () => {
+        return this.#name
+    }
+
+    getCarType = () => {
+        return this.#type
+    }
+
+    getCarModel = () => {
+        return this.#model
+    }
+
+    setCarName = (newName) => {
+        this.#name = newName
+    }
+
+    getCarDetials = () => {
+        return `This is ${this.#name} and the type is ${this.type}`
+    }
+
+}
+
+// Object
+const myCar = new Car("i20 Sports", "Mini SUV", "Sportz Model")
+console.log(myCar)
+// console.log( myCar.#name )
+// myCar.#name = 'Changed Car Name'
+// console.log(myCar)
+
+console.log( myCar.getCarName() )
+console.log( myCar.getCarType() )
+console.log( myCar.getCarModel() )
+
+console.log(myCar.getCarDetials())
