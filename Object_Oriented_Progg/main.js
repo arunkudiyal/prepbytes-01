@@ -125,59 +125,185 @@
 // ES6 Classes
 // class is a unit which is a basic combination of properties and methods
 
-
+// PILLARS OF OOPS
 // 1. Encapsulation --> A way of wrapping your properties & methods in a single unit called class
+// 2. Absstraction --> Eg: Radio --> Hiding the implemetation details --> Getters and Setters
+// 3. Polymorphirsm --> Poly (many); morph (forms); function --> existing in multiple form --> sample anme but diff functionalities
+// 4. Inheritance --> Inherit properties & methods from a parent class to child class
+// --> Types of Inheritance (Multiple Inheriyance)
 
-class Car {
-    // properties -> no let, no var, no const
-    // carName
+// class Car {
+//     // properties -> no let, no var, no const
+//     // carName
 
-    // private properties
-    #name
-    #type
-    #model
-    // private String name <--> #name
+//     // private properties
+//     #name
+//     #type
+//     #model
+//     // private String name <--> #name
 
-    // Constructor -> piece of code which helps you initialise the class properties 
-    constructor(name, type, model) {
-        // this.propertyName = parameter
-        this.#name = name,
-        this.#type = type,
-        this.#model = model
-    }
+//     // Constructor -> piece of code which helps you initialise the class properties 
+//     constructor(name, type, model) {
+//         // this.propertyName = parameter
+//         this.#name = name,
+//         this.#type = type,
+//         this.#model = model
+//     }
 
-    // Getter & Setters Methods
-    getCarName = () => {
-        return this.#name
-    }
+//     // Getter & Setters Methods
+//     getCarName = () => {
+//         return this.#name
+//     }
 
-    getCarType = () => {
-        return this.#type
-    }
+//     getCarType = () => {
+//         return this.#type
+//     }
 
-    getCarModel = () => {
-        return this.#model
-    }
+//     getCarModel = () => {
+//         return this.#model
+//     }
 
-    setCarName = (newName) => {
-        this.#name = newName
-    }
+//     setCarName = (newName) => {
+//         this.#name = newName
+//     }
 
-    getCarDetials = () => {
-        return `This is ${this.#name} and the type is ${this.type}`
-    }
+//     getCarDetials = () => {
+//         return `This is ${this.#name} and the type is ${this.#type}`
+//     }
 
-}
+// }
 
-// Object
-const myCar = new Car("i20 Sports", "Mini SUV", "Sportz Model")
-console.log(myCar)
-// console.log( myCar.#name )
-// myCar.#name = 'Changed Car Name'
+// // Object
+// const myCar = new Car("i20 Sports", "Mini SUV", "Sportz Model")
 // console.log(myCar)
+// // console.log( myCar.#name )
+// // myCar.#name = 'Changed Car Name'
+// // console.log(myCar)
 
-console.log( myCar.getCarName() )
-console.log( myCar.getCarType() )
-console.log( myCar.getCarModel() )
+// console.log( myCar.getCarName() )
+// console.log( myCar.getCarType() )
+// console.log( myCar.getCarModel() )
 
-console.log(myCar.getCarDetials())
+// console.log(myCar.getCarDetials())
+
+// myCar.setCarName('Thar')
+
+// console.log(myCar.getCarDetials())
+
+// EXAMPLE - 2
+
+// Class -> Template to create real life entities (objects)
+
+// import './script'
+// import Demo from './script'
+
+// class Animal {
+//     // Properties
+//     defaultProperty = 'This is a default Property'
+//     #type
+//     #name
+//     #noOfLegs
+//     #hasWings
+
+//     // constructor() {}
+
+//     constructor(type, name, noOfLegs, hasWings) {
+//         this.#type = type
+//         this.#name = name
+//         this.#noOfLegs = noOfLegs
+//         this.#hasWings = hasWings
+//     }
+
+//     // Methods --> If you want to create private methods, put # in front.
+//     speak = () => {
+//         return `${this.#name} is speaking...`
+//     }
+
+//     // YOU CAN ALSO DO THIS BUT YOU SHOULN'T
+//     // anyHowImplementMethod = () => {
+//     //     return this.#speak()
+//     // }
+
+//     eat = () => {
+//         return `${this.#name} is eating...`
+//     }
+// }
+
+// // Real-Life Entities (Objects)
+// // const demo1 = new Demo(100, 200)
+// // console.log(demo1)
+
+// const lion = new Animal("Mammal", "Lion", 4, false)
+// console.log( lion )
+// console.log( lion.defaultProperty )
+
+// // Access your methods
+// // console.log( lion.anyHowImplementMethod() )
+// lion.speak()
+// console.log( lion.speak() )
+// console.log( lion.speak('roar') )
+// console.log( lion.eat() )
+
+
+// INHERITANCE IN OOPs
+// --> Way to inherit functionalities and properties from one class to another class
+
+// class Person {
+//     #sampleProp = 'This is a sample property'
+//     constructor(name, age, gender) {
+//         this.name = name
+//         this.age = age
+//         this.gender = gender
+//     }
+
+//     getDetails = () => {
+//         const myPerson = {
+//             name: this.name,
+//             age: this.age,
+//             gender: this.gender
+//         }
+
+//         return myPerson
+//     }
+// }
+
+// class Professor extends Person {
+//     constructor(name, age, gender, subject, degree) {
+//         super(name, age, gender)
+//         this.subject = subject
+//         this.degree = degree
+//     }
+// }
+
+// class Student extends Person {
+//     constructor(name, age, gender, collegeName, specialization) {
+//         super(name, age, gender)
+//         this.collegeName = collegeName
+//         this.specialization = specialization
+//     }
+// }
+
+// const newProfessor = new Professor("Mr. Griffins", 34, 'Male', 'Physics', 'P.hD.')
+// console.log(newProfessor)
+// console.log( newProfessor.getDetails() )
+
+
+// const newStudent = new Student('Harry', 21, 'Male', 'IIT-B', 'CSE')
+// console.log(newStudent)
+// console.log(newStudent.getDetails())
+
+
+// Multiple Inheritance
+// --> One child class tries to inherit more than one parent class
+// class Demo extends Demo1, Demo2
+
+// Demo1 {
+//     method --> fun()
+// }
+
+// Demo2 {
+//     method --> fun()
+// }
+
+// obj = Demo1, Demo2
+// obj.fun()
